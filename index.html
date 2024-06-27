@@ -262,31 +262,35 @@
                 <div class="col-lg-8">
                     <div class="bg-light text-center p-5">
                         <h1 class="mb-4">Book A Service</h1>
-                        <form>
+                        <form method="POST" 
+                        action="https://script.google.com/a/macros/pcampus.edu.np/s/AKfycbwsMpV11NEPbvcnHXOnaQN4zjXthh_Hx7kw3SxGKnApQpka7oG0HbPh3fF05mZ0Fun1/exec">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                    <input name="Name" type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                    <input name="Email" type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
+                                    <input name="Number" type="text" class="form-control border-0" placeholder="Contact Number" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <select name="Service" type="text" class="form-select border-0" style="height: 55px;">
                                         <option selected>Select A Service</option>
-                                        <option value="1">Book A Contant</option>
-                                        <option value="2">Get Training</option>
-                                        <option value="3">Rent A House</option>
+                                        <option>Book A Contant</option>
+                                        <option>Get Training</option>
+                                        <option>Rent A House</option>
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text"
+                                        <input name="Date" type="text"
                                             class="form-control border-0 datetimepicker-input"
                                             placeholder="Service Date" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control border-0" placeholder="Special Request"></textarea>
+                                    <textarea name="Request" type="text" class="form-control border-0" placeholder="Special Request"></textarea>
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="submit">Book Now</button>
